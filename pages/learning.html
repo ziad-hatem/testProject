@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>Al-BAYADER</title>
+  </head>
+  <body class="bg-white dark:bg-black">
+    <!-- Start NavBar -->
+    <nav
+      class="w-full fixed z-10 h-28 bg-white dark:bg-black flex justify-around items-center"
+    >
+      <button class="h-8 w-8 ml-6 sm:hidden cursor-pointer" aria-label="Menu">
+        <img
+          src="../assets/lightmodeAssets/bars-solid.svg"
+          class="text-slate-100 themeImage"
+          data-light-src="../assets/lightmodeAssets/bars-solid.svg"
+          data-dark-src="../assets/darkmodeAssets/bars-solid.svg"
+          alt="Menu Icon"
+        />
+      </button>
+      <ul
+        class="hidden mb-5 sm:mb-0 sm:flex flex-row-reverse items-center bg-black dark:bg-white font-bold p-3 mt-3 px-10 gap-8 text-white"
+      >
+        <li>
+          <a href="#" class="hover:text-gray-300 dark:text-black">الرئيسية</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-gray-300 dark:text-black"
+            >عن الجمعية</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-gray-300 dark:text-black"
+            >المشاريع</a
+          >
+        </li>
+        <li>
+          <a href="#news" class="hover:text-gray-300 dark:text-black"
+            >أخبارنا</a
+          >
+        </li>
+        <li>
+          <a href="#partners" class="hover:text-gray-300 dark:text-black"
+            >شركائنا</a
+          >
+        </li>
+        <li>
+          <a href="#about-us" class="hover:text-gray-300 dark:text-black"
+            >من نحن</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-gray-300 dark:text-black"
+            >اتصل بنا</a
+          >
+        </li>
+      </ul>
+      <ul
+        id="navbar"
+        class="hidden absolute top-[30px] mb-5 sm:mb-0 flex-row-reverse items-center bg-black dark:bg-white font-bold p-3 mt-3 px-10 gap-8 text-white"
+      >
+        <li>
+          <a href="#" class="hover:text-gray-300 dark:text-black">الرئيسية</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-gray-300 dark:text-black"
+            >عن الجمعية</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="hover:text-gray-300 dark:text-black"
+            >المشاريع</a
+          >
+        </li>
+        <li>
+          <a href="#news" class="hover:text-gray-300 dark:text-black"
+            >أخبارنا</a
+          >
+        </li>
+        <li>
+          <a href="#partners" class="hover:text-gray-300 dark:text-black"
+            >شركائنا</a
+          >
+        </li>
+        <li>
+          <a href="#about-us" class="hover:text-gray-300 dark:text-black"
+            >من نحن</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-gray-300 dark:text-black"
+            >اتصل بنا</a
+          >
+        </li>
+      </ul>
+      <div class="w-fit max-w-[200px]">
+        <img
+          src="../assets/lightmodeAssets/lightLogo.png"
+          data-light-src="../assets/lightmodeAssets/lightLogo.png"
+          data-dark-src="../assets/darkmodeAssets/darkLogo.png"
+          class="w-fit sm:w-[80%] themeImage"
+          alt="Logo"
+          id="toggleDarkMode"
+        />
+      </div>
+    </nav>
+
+    <!-- End NavBar -->
+
+    <!-- Start Hero Section -->
+    <section
+      id="#"
+      class="bg-white dark:bg-black w-full pt-[7rem] flex flex-col-reverse sm:flex-row justify-center items-center"
+    >
+      <div
+        class="relative w-[80%] mx-auto sm:w-full flex flex-col items-center sm:items-end sm:text-end gap-6 sm:-right-20"
+      >
+        <h1 class="sm:text-6xl text-5xl font-bold text-black dark:text-white">
+          جملة افتتاحية
+        </h1>
+        <p
+          class="text-xl font-semibold sm:w-[60%] text-center sm:text-end text-[#5B5B5B]"
+        >
+          جمعية البيادر للتنمية والتطوير، العديد من الأنواع المتوفرة لنصوص لوريم
+          إيبسوم
+        </p>
+        <button
+          class="px-8 py-2 bg-black text-white dark:bg-white dark:text-black font-bold"
+        >
+          تفاصيل أكثر
+        </button>
+      </div>
+
+      <div
+        class="min-w-[350px] flex sm:w-[80%] justify-center sm:justify-start"
+      >
+        <img
+          src="../assets/darkmodeAssets/learning-red.svg"
+          class="sm:w-1/2 md:w-full max-w-[350px]"
+          alt="heroSectionImg"
+        />
+      </div>
+    </section>
+
+    <!-- End Hero Section -->
+
+    <!-- Start Projects Section -->
+    <section
+      id="projects"
+      class="w-full min-h-screen pt-[100px] bg-white dark:bg-black"
+    >
+      <div class="container mx-auto w-[90%] h-[90%] border border-gray-600">
+        <div
+          class="title flex flex-col-reverse items-center justify-center w-[90%] mx-auto gap-5 mt-12 mb-12 text-center sm:flex-row sm:justify-around sm:text-right"
+        >
+          <p
+            class="text-lg font-semibold text-center sm:w-[60%] sm:text-xl sm:text-end dark:text-white"
+          >
+            مقدمة عن جمعية البيادر وهي جمعية تعمل على لوريم ايبسوم ،هنالك العديد
+            من الأنواع المتوفرة لنصوص لوريم إيبسوم.
+          </p>
+          <h1 class="text-4xl font-bold dark:text-white">المشاريع</h1>
+        </div>
+        <div class="projects pb-24 mt-8 h-fit">
+          <div
+            class="project flex flex-wrap justify-center gap-10 w-[90%] mx-auto"
+          >
+            <div
+              class="box flex items-center justify-start w-full h-[230px] bg-[#7DA068] border border-gray-600 sm:w-[45%]"
+            >
+              <div class="title text-right w-[90%] text-sm">
+                <h1 class="text-xl font-bold dark:text-white">
+                  التربية والتعليم
+                </h1>
+                <p class="text-[#5B5B5B] font-semibold text-sm sm:text-lg">
+                  وصف مشروع التربية والتعليم وصف مشروع التربية والتعليم
+                </p>
+              </div>
+              <img
+                src="../assets/lightmodeAssets/learning.png"
+                class="w-[40%] themeImage"
+                data-light-src="../assets/lightmodeAssets/learning.png"
+                data-dark-src="../assets/darkmodeAssets/learning.png"
+                alt="Education Project"
+              />
+            </div>
+            <div
+              class="box flex items-center justify-start w-full h-[230px] border border-gray-600 sm:w-[45%]"
+            >
+              <div class="title text-right w-[90%] text-sm">
+                <h1 class="text-xl font-bold dark:text-white">
+                  التخطيط والبناء
+                </h1>
+                <p class="text-[#5B5B5B] font-semibold text-sm sm:text-lg">
+                  وصف مشروع التخطيط والبناء
+                </p>
+              </div>
+              <img
+                src="../assets/lightmodeAssets/building.png"
+                data-light-src="../assets/lightmodeAssets/building.png"
+                data-dark-src="../assets/darkmodeAssets/build.png"
+                class="w-[40%] themeImage"
+                alt="Planning and Construction Project"
+              />
+            </div>
+            <div
+              class="box flex items-center justify-start w-full h-[230px] border border-gray-600 sm:w-[45%]"
+            >
+              <div class="title text-right w-[90%] text-sm">
+                <h1 class="text-xl font-bold dark:text-white">
+                  البيئة والطاقة
+                </h1>
+                <p class="text-[#5B5B5B] font-semibold text-sm sm:text-lg">
+                  وصف مشروع البيئة والطاقة
+                </p>
+              </div>
+              <img
+                src="../assets/lightmodeAssets/energy.png"
+                data-light-src="../assets/lightmodeAssets/energy.png"
+                data-dark-src="../assets/darkmodeAssets/energy.png"
+                class="w-[40%] themeImage"
+                alt="Logo"
+              />
+            </div>
+            <div
+              class="box flex items-center justify-start w-full h-[230px] border border-gray-600 sm:w-[45%]"
+            >
+              <div class="title text-right w-[90%] text-sm">
+                <h1 class="text-xl font-bold dark:text-white">الاقتصاد</h1>
+                <p class="text-[#5B5B5B] font-semibold text-sm sm:text-lg">
+                  وصف مشروع الاقتصاد
+                </p>
+              </div>
+              <img
+                src="../assets/lightmodeAssets/economist.png"
+                class="w-[40%] themeImage"
+                data-light-src="../assets/lightmodeAssets/economist.png"
+                data-dark-src="../assets/darkmodeAssets/economist.png"
+                alt="Economics Project"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Projects Section -->
+
+    <!-- Start Goal Section -->
+    <section
+      class="w-full border bg-white dark:bg-black border-gray-600 py-20 min-h-[400px] flex flex-col items-center justify-center sm:flex-row sm:justify-around"
+    >
+      <div class="w-full px-4 text-center sm:w-[40%] sm:text-right lg:px-0">
+        <h1
+          class="text-2xl font-bold mb-8 sm:text-3xl md:text-4xl dark:text-white"
+        >
+          الرؤية والاهداف
+        </h1>
+        <p
+          class="text-base font-semibold sm:text-lg md:text-xl dark:text-white"
+        >
+          لوريم ايبسوم دولار سيت أميت, كونسيكتيتور أدايبا يسكينج أليايت, سيت دو
+          أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا. يوت انيم
+          أد مينيم فينايم, كيواس نوستريد أكسير سيتاشن يللأمكو.
+        </p>
+      </div>
+      <div class="w-full sm:w-[40%] px-4 sm:px-0">
+        <img
+          src="../assets/lightmodeAssets/eye.png"
+          data-light-src="../assets/lightmodeAssets/eye.png"
+          data-dark-src="../assets/darkmodeAssets/eye.png"
+          alt="Goal Section image themeImage"
+          class="max-w-full h-auto mx-auto"
+        />
+      </div>
+    </section>
+    <!-- end Goal Section -->
+
+    <!-- Start Who We Are Section -->
+    <section
+      id="about-us"
+      class="w-full min-h-screen py-10 bg-white dark:bg-black"
+    >
+      <div
+        class="text w-full text-center sm:text-right block sm:flex flex-row-reverse justify-around px-4 sm:px-8"
+      >
+        <h1 class="font-bold text-3xl sm:text-4xl mb-8 dark:text-white">
+          من نحن
+        </h1>
+        <p class="font-semibold text-lg sm:text-xl sm:w-[80%] dark:text-white">
+          لوريم ايبسوم دولار سيت أميت, كونسيكتيتور أدايبا يسكينج أليايت, سيت دو
+          أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا. يوت انيم
+          أد مينيم فينايم.
+        </p>
+      </div>
+      <img
+        src="../assets/lightmodeAssets/twoPersons.png"
+        class="mx-auto w-full max-w-4xl mt-12"
+        alt=""
+      />
+
+      <div
+        class="text w-full text-center sm:text-right block sm:flex flex-row-reverse justify-around mt-12 px-4 sm:px-8"
+      >
+        <h1 class="font-bold text-3xl sm:text-4xl mb-8 w-full sm:w-auto">
+          :المديرون
+        </h1>
+        <div class="flex flex-wrap justify-evenly items-center w-full">
+          <!-- Director 1 -->
+          <div class="mb-8 px-4 w-full sm:w-[220px]">
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Director 2 -->
+          <div class="mb-8 px-4 w-full sm:w-[220px]">
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text w-full text-center sm:text-right block sm:flex flex-row-reverse justify-around mt-12 px-4 sm:px-8"
+      >
+        <h1
+          class="font-bold text-3xl sm:text-4xl mb-8 w-full sm:w-auto text-end dark:text-white"
+        >
+          :الفريق
+        </h1>
+        <div class="flex flex-wrap justify-center items-center w-full gap-12">
+          <!-- Team Member 1 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/woman.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/man.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/man2.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text w-full text-center sm:text-right block sm:flex flex-row-reverse justify-around mt-12 px-4 sm:px-8"
+      >
+        <h1
+          class="font-bold text-3xl sm:text-4xl mb-8 w-full sm:w-auto text-end dark:text-white"
+        >
+          :المؤسسون
+        </h1>
+        <div class="flex flex-wrap justify-center items-center w-full gap-8">
+          <!-- Team Member 1 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/man3.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/man.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/woman.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="w-[220px] px-4">
+            <img
+              src="../assets/lightmodeAssets/man2.png"
+              alt=""
+              class="mx-auto"
+            />
+            <h1 class="title font-bold text-xl dark:text-white">
+              لوريم ايبسوم دولار
+            </h1>
+            <h3 class="text-[#929292] mt-2 dark:text-white">لوريم ايبسو</h3>
+            <h2 class="font-semibold text-md dark:text-white">
+              لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Who We Are Section -->
+
+    <!-- start others news -->
+    <section
+      id="news"
+      class="w-full min-h-[600px] sm:min-h-[850px] pt-10 bg-[#F5AE2E] dark:bg-[#A81F33]"
+      ]
+    >
+      <h1 class="title w-full text-right p-10 text-4xl md:text-5xl">
+        :اخر مقالات
+      </h1>
+      <div
+        class="info flex flex-col-reverse md:flex-row w-full justify-center items-center md:items-end gap-8 p-4 md:gap-12"
+      >
+        <div class="text text-right w-full md:w-[500px] px-4">
+          <h1 class="text-bold text-2xl md:text-4xl mb-2 dark:text-white">
+            دولار سيت أميت
+          </h1>
+          <h3 class="text-md mb-2">13-12-2024</h3>
+          <h2 class="text-sm md:text-lg mb-4 dark:text-white">
+            لابوري ات دولار ماجنا أليكيوا. يوت انيم أد مينيم فينايم,كيواس
+            نوستريد ريبريهينديرأيت
+          </h2>
+          <button
+            class="px-4 md:px-8 py-2 bg-black text-white dark:bg-white dark:text-black font-bold"
+          >
+            تفاصيل أكثر
+          </button>
+        </div>
+        <img
+          src="/assets/lightmodeAssets/rocks.png"
+          class="max-w-full md:w-[50%] h-auto"
+          alt="Image description for better accessibility"
+        />
+      </div>
+    </section>
+    <!-- end others news -->
+
+    <!-- start Last Section -->
+    <section
+      class="w-full min-h-screen pt-10 bg-white dark:bg-black flex items-start flex-wrap justify-around sm:items-center px-4 py-10"
+    >
+      <div class="w-[200px] sm:w-[250px] mx-auto">
+        <img
+          src="../assets/lightmodeAssets/lastSectionLogo.png"
+          data-light-src="../assets/lightmodeAssets/lightLogo.png"
+          data-dark-src="../assets/darkmodeAssets/darkLogo.png"
+          class="w-full themeImage"
+          alt="Logo"
+        />
+      </div>
+      <div
+        class="draw flex justify-center items-center relative mx-auto mt-10 md:mt-0"
+      >
+        <img
+          src="../assets/lightmodeAssets/img.png"
+          data-light-src="../assets/lightmodeAssets/img.png"
+          data-dark-src="../assets/darkmodeAssets/img2.png"
+          class="h-[250px] sm:h-full themeImage hidden sm:block"
+          alt="Draw"
+        />
+        <img
+          src="../assets/lightmodeAssets/lastSectionLogoResponsive.png"
+          data-light-src="../assets/lightmodeAssets/lastSectionLogoResponsive.png"
+          data-dark-src="../assets/darkmodeAssets/img.png"
+          class="h-[400px] sm:max-h-full themeImage sm:hidden"
+          alt="Draw"
+        />
+      </div>
+    </section>
+    <!-- end Last Section -->
+    <!-- start Footer -->
+    <footer
+      class="w-full dark:bg-black min-h-[100px] py-10 flex justify-center items-center"
+    >
+      <p
+        class="text-bold text-xl text-center border border-transparent border-t-white pt-5 dark:text-white"
+      >
+        جميع الحقوق محفوظة لمنصة البيادر © 2024 | الشروط والأحكام | سياسة
+        الخصوصية
+      </p>
+    </footer>
+    <!-- end Footer -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
